@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('build da imagem docker'){
       steps{
-        sh 'docker build -t devops/app .'
+        sh 'sudo docker build -t devops/app .'
       }
     }
     stage('subir docker compose - redis e app'){
