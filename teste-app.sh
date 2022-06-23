@@ -6,9 +6,9 @@ then
   echo 'ok - serviço no ar!'
 elif[[ $RESULT == *"Number"* ]]
 then
-  echo 'ok - number os visits'
+  echo "ok - number os visits"
   echo $RESULT
 else
-  echo 'not ok - number of visit'
+  echo "not ok - number of visit"
   exit 1
 fi
