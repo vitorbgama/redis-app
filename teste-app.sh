@@ -1,6 +1,6 @@
 #/bin/bahs
 RESULT="`wget -qO- http://localhost:8090`"
-wget -q loacalhost:8090
+wget -q localhost:8090
 if [ $? -eq 0 ]
 then
   echo "ok - serviço no ar!"
