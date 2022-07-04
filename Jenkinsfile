@@ -15,6 +15,7 @@ pipeline{
       steps{
         sh 'sleep 60'
       }
+    }
     stage('sonarqube validation'){
       steps{
         script{
@@ -37,5 +38,4 @@ pipeline{
       }
     }
   }
-}
 }
