@@ -28,7 +28,7 @@ pipeline{
     }
     stage('Quality Gate'){
       steps{
-        w1aitForQualityGate abortPipeline: true
+        waitForQualityGate abortPipeline: true
       }
     }
     stage('teste da aplicação'){
