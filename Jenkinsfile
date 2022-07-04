@@ -26,6 +26,11 @@ pipeline{
         }
       }
     }
+    stage('Quality Gate'){
+      steps{
+        w1aitForQualityGate abortPipeline: true
+      }
+    }
     stage('teste da aplicação'){
       steps{
         sh 'chmod a+x teste-app.sh'
